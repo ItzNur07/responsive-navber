@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="logo">R.Navigation</div>
+		<nav class="nav">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="social-link">
+			<i id="ser" class="fas fa-search"></i>
+			<input type="text" placeholder="search here">
+			<i id="user" class="fas fa-user"></i>
+		 </div>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+	</header>
+
+
+<script>
+	
+	let menu = document.querySelector('.menu-toggle');
+	menu.addEventListener('click',()=>{
+		let nav = document.querySelector('.nav');
+		nav.classList.toggle('toggler');
+	})
+
+
+</script>
+</body>
+</html>
